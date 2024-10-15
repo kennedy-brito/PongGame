@@ -45,7 +45,20 @@ public class GamePanel extends JPanel implements Runnable{
                 BALL_DIAMETER
                 );
     }
+    public void paint(Graphics g) {
+        image = createImage(getWidth(),getHeight());
+        graphics = image.getGraphics();
+        draw(graphics);
+        g.drawImage(image,0,0,this);
+    }
+    public void draw(Graphics g) {
+        paddle1.draw(g);
+        paddle2.draw(g);
+        ball.draw(g);
+        score.draw(g);
+        Toolkit.getDefaultToolkit().sync(); // I forgot to add this line of code in the video, it helps with the animation
 
+    }
     public void newPaddles(){
         paddle1 = new Paddle(
                 0,
@@ -58,7 +71,7 @@ public class GamePanel extends JPanel implements Runnable{
                 (GAME_HEIGHT/2) - (PADDLE_HEIGHT/2),
                 PADDLE_WIDTH,
                 PADDLE_HEIGHT,
-                1);
+                2);
         Toolkit.getDefaultToolkit().sync();
     }
 
@@ -72,10 +85,10 @@ public class GamePanel extends JPanel implements Runnable{
 
         //bounce ball off top & bottom window edges
         if(ball.y <= 0){
-            ball.setYDirection(-ball.yVelocity);
+            ball.setYDirection(Math.abs(ball.yVelocity));
         }
-        if(ball.y>=GAME_HEIGHT-BALL_DIAMETER){
-            ball.setYDirection(-ball.yVelocity);
+        if(ball.y >= GAME_HEIGHT-BALL_DIAMETER ){
+            ball.setYDirection(-Math.abs(ball.yVelocity));
         }
         //bounce ball off paddles
         if(ball.intersects(paddle1)) {

@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df746d57-b341-4a33-9179-f0877d1ee89e" name="Changes" comment="adding Score Class">
+    <list default="true" id="df746d57-b341-4a33-9179-f0877d1ee89e" name="Changes" comment="adding GameFrame Class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/GameFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/GameFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +25,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -31,15 +37,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/willi/source/repos/java/PongGame/src/main/java/org/example/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "C:/Users/willi/source/repos/java/PongGame/src/main/java/org/example/Main.java"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="game" />
@@ -94,7 +101,39 @@
       <option name="project" value="LOCAL" />
       <updated>1729031305336</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="adding GamePanel Class">
+      <option name="closed" value="true" />
+      <created>1729033139024</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1729033139024</updated>
+    </task>
+    <task id="LOCAL-00007" summary="adding Score Class">
+      <option name="closed" value="true" />
+      <created>1729033275319</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1729033275319</updated>
+    </task>
+    <task id="LOCAL-00008" summary="adding GamePanel Class">
+      <option name="closed" value="true" />
+      <created>1729033285450</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1729033285450</updated>
+    </task>
+    <task id="LOCAL-00009" summary="adding GameFrame Class">
+      <option name="closed" value="true" />
+      <created>1729033292363</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1729033292363</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -102,17 +141,16 @@
     <MESSAGE value="adding Ball class" />
     <MESSAGE value="adding Paddle Class" />
     <MESSAGE value="adding Score Class" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding Score Class" />
+    <MESSAGE value="adding GamePanel Class" />
+    <MESSAGE value="adding GameFrame Class" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding GameFrame Class" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="all.y &gt;= GAME_HEIGHT-BALL_DIAMETER - 1" />
+        <watch expression="(ball.y &gt;= GAME_HEIGHT-BALL_DIAMETER - 1)" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
